@@ -3,16 +3,13 @@ body {
   background-color: #315481;
   background-image: linear-gradient(to bottom, #315481, #918e82 100%);
   background-attachment: fixed;
-
   position: absolute;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
-
   padding: 0;
   margin: 0;
-
   font-size: 14px;
 }
 
@@ -128,8 +125,8 @@ header {
 }
 
 .filter {
-  display: flex;
-  justify-content: center;
+  margin-top: 15px;
+  padding: 0 30px;
 }
 
 .filter > button {
@@ -174,14 +171,17 @@ header {
 }
 
 .user {
-  display: flex;
-  align-self: flex-end;
-  margin: 8px 16px 0;
+  padding: 5px 0;
+  text-align: right;
+}
+
+.user span {
   font-weight: bold;
 }
 
-.user:hover {
-  cursor: pointer;
+.user a {
+  color: white;
+  text-decoration: none;
 }
 
 .loading {

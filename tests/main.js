@@ -1,6 +1,6 @@
 import assert from "assert";
 
-import "../imports/api/tasksMethods.tests.js";
+import "../imports/api/Tasks/tasksMethods.tests.js";
 
 describe("simple-todos-blaze", function () {
   it("package.json has correct name", async function () {

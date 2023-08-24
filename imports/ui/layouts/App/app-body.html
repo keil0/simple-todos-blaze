@@ -1,0 +1,25 @@
+<template name="App_body">
+    <div class="app">
+        <header>
+            <div class="app-bar">
+                <div class="app-header">
+                    <h1>My super app</h1>
+                    <ul>
+                        <li><a href="/">My todolist</a></li>
+                        <li><a href="/exports">Exports</a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+
+        {{#if isUserLogged}}
+            <div class="user">
+                <span>{{getUser.username}}</span> | <a href="#" class="logout">Logout 🚪</a>
+            </div>
+        {{/if}}
+
+        <div class="main">
+            {{> Template.dynamic template=main}}
+        </div>
+    </div>
+</template>

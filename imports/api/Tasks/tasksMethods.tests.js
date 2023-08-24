@@ -2,8 +2,8 @@ import { Meteor } from "meteor/meteor";
 import { Random } from "meteor/random";
 import { mockMethodCall } from "meteor/quave:testing";
 import { assert } from "chai";
-import { TasksCollection } from "/imports/db/TasksCollection";
-import "/imports/api/tasksMethods";
+import { TasksCollection } from "/imports/db/Tasks/TasksCollection";
+import "/imports/api/Tasks/tasksMethods";
 
 if (Meteor.isServer) {
   describe("Tasks", () => {
