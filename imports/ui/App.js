@@ -1,7 +1,13 @@
 import { Template } from "meteor/templating";
+import { ReactiveDict } from "meteor/reactive-dict";
+import { TasksCollection } from "../api/TasksCollection";
 
 import "./App.html";
-import { TasksCollection } from "../api/TasksCollection";
+import "./Task.js";
+
+Template.mainContainer.onCreated(function mainContainerOnCreated() {
+  this.state = new ReactiveDict();
+});
 
 Template.mainContainer.helpers({
   tasks() {
