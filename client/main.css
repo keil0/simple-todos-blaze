@@ -192,3 +192,7 @@ header {
   align-items: center;
   font-weight: bold;
 }
+
+.container {
+  padding: 0 15px;
+}

@@ -15,6 +15,7 @@ const isUserLogged = () => !!getUser();
 const HIDE_COMPLETED_STRING = "hideCompleted";
 const IS_LOADING_STRING = "isLoading";
 
+// TODO: Ask where is the best place to store this kind of function
 const getTasksFilter = () => {
   const user = getUser();
   const hideCompletedFilter = { isChecked: { $ne: true } };
@@ -65,6 +66,7 @@ Template.Tasks_index.onCreated(function mainContainerOnCreated() {
   this.state = new ReactiveDict();
 
   const handler = Meteor.subscribe("tasks");
+
   Tracker.autorun(() => {
     this.state.set(IS_LOADING_STRING, !handler.ready());
   });

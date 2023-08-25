@@ -1,3 +1,14 @@
 <template name="Exports_index">
-<h1>Exports index</h1>
+    <div class="container">
+        <h1>Lancer un export</h1>
+        <button class="export">Export</button>
+    </div>
+
+    <div>
+        <ul class="exports">
+            {{#each exports}}
+                {{> export}}
+            {{/each}}
+        </ul>
+    </div>
 </template>
