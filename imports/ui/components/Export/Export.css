@@ -10,7 +10,7 @@
 }
 
 .export__title {
-    flex: 1;
+    flex: 2;
 }
 
 .export__progress_bar {
@@ -23,14 +23,30 @@
 .export__progress_bar span {
     display: block;
     background-color: blue;
-    height: 100%;
+    height: 20px;
+}
+
+.export__progress_text {
+    flex: 1;
 }
 
 .export__result {
-    flex: 2;
-    text-align: center;
+    flex: 1;
 }
 
 .delete {
     background-color: red;
+}
+
+@media (max-width: 768px) {
+    .export__line {
+        flex-direction: column;
+        border-bottom: 1px solid darkgrey;
+        padding-bottom: 15px;
+        margin-bottom: 15px;
+    }
+    .export__title {
+        flex: none;
+        width: 100%;
+    }
 }
