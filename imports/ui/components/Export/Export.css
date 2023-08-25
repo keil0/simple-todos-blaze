@@ -1,0 +1,29 @@
+.export__item {
+    list-style: none;
+}
+
+.export__line {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.export__title {
+    flex: 1;
+}
+
+.export__progress_bar {
+    flex: 1;
+    border: 1px solid blue;
+    height: 20px;
+    width: 100%;
+}
+
+.export__progress_bar span {
+    display: block;
+    background-color: blue;
+    height: 100%;
+}
+
+.export__result {
+    flex: 2;
+}

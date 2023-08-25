@@ -1,3 +1,7 @@
 button.export {
     color: #000000;
 }
+.exports {
+    padding: 15px 0;
+    width: 100%;
+}

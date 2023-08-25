@@ -1,5 +1,15 @@
 <template name="export">
-    <li>
-        Export #{{_id}}
+    <li class="export__item">
+        <div class="export__line">
+            <div class="export__title">
+                Export #{{_id}}
+            </div>
+            <div class="export__progress_bar">
+                <span style="width: {{progress}}%"></span>
+            </div>
+            <div class="export__result">
+                {{ result }}
+            </div>
+        </div>
     </li>
 </template>
