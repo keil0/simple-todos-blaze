@@ -8,7 +8,10 @@
                 <span style="width: {{progress}}%"></span>
             </div>
             <div class="export__result">
-                {{ result }}
+                <a target="_blank" href="{{ result }}">{{ result }}</a>
+            </div>
+            <div class="export__actions">
+                <button class="delete">&times;</button>
             </div>
         </div>
     </li>
